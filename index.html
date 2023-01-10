@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>AIM TodoApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
   </head>
+
+  <style>
+  body {
+    background-image: url('image/td10.jpg'); background-repeat: no-repeat; background-size: cover;
+      text-align: center;
+      font-family: 'open sans', sans-serif;
+      animation-name: example;
+      animation-duration: 35s;
+  }
+
+    @keyframes example {
+    0%   {background-image: url('image/td10.jpg'); background-repeat: no-repeat; background-size: cover;}
+    25%  {background-image: url('image/td.webp'); background-repeat: no-repeat; background-size: cover;}
+    50%  {background-image: url('image/td8.webp'); background-repeat: no-repeat; background-size: cover;}
+    100% {background-image: url('image/td0.jpg'); background-repeat: no-repeat; background-size: cover;}
+  }
+
+  </style>
   <body>
     <div class="container">
       <div class="row">
         <div class="intro col-12">
-          <h1 style="color:wheat">Work To-Do</h1>
+          <h1 style="color: wheat">Work To-Do</h1>
           <div>
             <div class="border1"></div>
           </div>
@@ -29,21 +49,23 @@
 
       <div class="row">
         <div class="col-12">
-            <input id="userInput" type="text" placeholder="New item..." maxlength="27">
-            <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+          <input
+            id="userInput"
+            type="text"
+            placeholder="New item..."
+            maxlength="27"
+          />
+          <button id="enter"><i class="fas fa-pencil-alt"></i></button>
         </div>
       </div>
       <!--Empty List-->
       <div class="row">
         <div class="listItem col-12">
-            <ul class="listItems col-12">
-                
-            </ul>
+          <ul class="listItems col-12"></ul>
         </div>
       </div>
-      
     </div>
   </body>
-  
-<script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
 </html>
